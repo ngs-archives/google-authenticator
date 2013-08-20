@@ -24,6 +24,7 @@
 		1D3623260D0F684500981E51 /* OTPAuthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OTPAuthAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		857395B317C419A0000B686C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 857395B217C419A0000B686C /* Default-568h@2x.png */; };
 		8B0022E011E7BF800092DE18 /* OTPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0022DF11E7BF800092DE18 /* OTPTableView.m */; };
 		8B0028B511EB75920092DE18 /* OTPScannerOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0028B411EB75920092DE18 /* OTPScannerOverlayView.m */; };
 		8B00365311ECD2390092DE18 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B00365211ECD2390092DE18 /* Default.png */; };
@@ -101,6 +102,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		857395B517C419A0000B686C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BF508691186346F005C936F /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
+			remoteInfo = ZXingTests;
+		};
 		8B3F0E75122F134D009A6409 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -132,6 +140,7 @@
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		857395B217C419A0000B686C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8B0022DE11E7BF800092DE18 /* OTPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPTableView.h; sourceTree = "<group>"; };
 		8B0022DF11E7BF800092DE18 /* OTPTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPTableView.m; sourceTree = "<group>"; };
 		8B0028B311EB75920092DE18 /* OTPScannerOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPScannerOverlayView.h; sourceTree = "<group>"; };
@@ -425,6 +434,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				857395B217C419A0000B686C /* Default-568h@2x.png */,
 				8B2B8AE1118BA49F00437315 /* README */,
 				8B4553CA1192158300ABD707 /* Entitlements.plist */,
 				8BF50835118633BB005C936F /* zxing */,
@@ -588,6 +598,7 @@
 			isa = PBXGroup;
 			children = (
 				8BF23A2D13D4ED3800F3FD82 /* libZXingWidget.a */,
+				857395B617C419A0000B686C /* ZXingTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -726,6 +737,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		857395B617C419A0000B686C /* ZXingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZXingTests.octest;
+			remoteRef = 857395B517C419A0000B686C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		8BF23A2D13D4ED3800F3FD82 /* libZXingWidget.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -757,6 +775,7 @@
 				8BC958EA128B5DB500A0E8F2 /* Icon.png in Resources */,
 				8BDA1F1313550A7B003EF49C /* Localizable.strings in Resources */,
 				8BF23A7413D4EF7E00F3FD82 /* GoogleNavBarLogo.png in Resources */,
+				857395B317C419A0000B686C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,7 +1017,7 @@
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				HEADER_SEARCH_PATHS = ../thirdparty/zxing/cpp/core/src;
 				INFOPLIST_FILE = "OTPAuth-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreVideo,
@@ -1015,7 +1034,7 @@
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				HEADER_SEARCH_PATHS = ../thirdparty/zxing/cpp/core/src;
 				INFOPLIST_FILE = "OTPAuth-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreVideo,

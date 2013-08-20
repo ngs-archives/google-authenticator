@@ -133,13 +133,15 @@ static NSString *const kOTPKeychainEntriesArray = @"OTPKeychainEntries";
 
   self.rootViewController
     = (RootViewController*)[self.navigationController topViewController];
-  [self.window addSubview:self.navigationController.view];
+  // [self.window addSubview:self.navigationController.view];
   if ([self.authURLs count] == 0) {
     OTPWelcomeViewController *controller
       = [[[OTPWelcomeViewController alloc] init] autorelease];
     [self.navigationController pushViewController:controller animated:NO];
   }
+  [self.window setRootViewController:self.navigationController];
   [self.window makeKeyAndVisible];
+  
   return YES;
 }
 

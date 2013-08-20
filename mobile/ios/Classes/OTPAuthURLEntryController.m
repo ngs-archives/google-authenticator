@@ -33,7 +33,7 @@
 @property(nonatomic, readwrite, assign) UIBarButtonItem *doneButtonItem;
 @property(nonatomic, readwrite, retain) Decoder *decoder;
 // queue is retained using dispatch_queue retain semantics.
-@property (nonatomic, retain) __attribute__((NSObject)) dispatch_queue_t queue;
+@property (nonatomic, retain) dispatch_queue_t queue;
 @property (nonatomic, retain) AVCaptureSession *avSession;
 @property BOOL handleCapture;
 
